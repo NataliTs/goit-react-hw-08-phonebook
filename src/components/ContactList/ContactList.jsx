@@ -10,11 +10,11 @@ import {
   selectFilter,
   selectError,
   selectIsLoading,
-} from 'redux/selectors';
+} from 'redux/Contacts/selectors';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { Loader } from 'components/Loader/Loader';
 import { useEffect } from 'react';
-import { fetchContacts, deleteContact } from '../../redux/operations';
+import { fetchContacts, deleteContact } from '../../redux/Contacts/operations';
 
 export const ContactList = () => {
   const contacts = useSelector(selectContacts);
